@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-project">
+    <header>
+    <h1 class="weather-place"> Weather in 
+        <br />
+        <span id="city"></span></h1>
+    
+    <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter the city" required class="search-form-input" id="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button"/>
+    </form>
+
+    </header>
+
+    <main>
+     <div class="weather-app-data">
+                   
+        <p class="weather-app-details">
+            <strong id="weekday"></strong> with <strong id="description"></strong>
+            <br />
+            Humidity:
+            <strong id="humidity"></strong>
+            <br />
+            Wind:
+            <strong id="wind"></strong>
+         </p>
+
+        <div class="weather-app-temperature-container">
+            <p>
+            <div class="icon" id="icon"></div>
+            <div class="temp-unit">
+            <div class="weather-temperature" id="temperature"></div>
+            <div class="weather-unit">°</div>
+            </div>
+            </p>
+        </div>
+     </div>
+        <div class="weather-forecast" id="forecast"> </div>
+    </main>
+
+
+    <footer>
+        <p class="about">
+         This project is coded by
+         <a href="https://www.linkedin.com/in/vipul-singh-4406152b9/" target="_blank">Vipul Kumar Singh </a>,
+         is open-sourced on 
+         <a href="https://github.com/vipuls05" target="_blank">GitHub</a>
+         and is hosted on <a href="https://ultimateweather.netlify.app" target"_blank">Netlify</a>.
+        </p>
+
+    </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
